@@ -26,6 +26,8 @@ style: |
 Kentaro Kuribayashi
 GMO Pepabo, Inc.
 
+ETHTokyo 2024
+
 <style scoped>
 h1 {
   margin-bottom: 0;
@@ -87,43 +89,50 @@ section {
     width: 100%;
   }
 </style>
+
+---
+
+# Improving on QV: Policy-Based Matching
+
+![Improving on QV](./images/improving-on-qv.png)
+
+<style scoped>
+  img {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+</style>
+
 ---
 
 # Proposed Solution:<br>Bidirectional Quadratic Voting (BQV)
 
-## Challenge
-- QV alone may not achieve precise matching with candidate preferences
+![Appling BQV to Elections](./images/applying-bqv-to-elections.png)
 
-## New Proposal: Bidirectional Quadratic Voting
-- Both voters and candidates use QV
-- Achieves more accurate preference matching
+<style scoped>
+  img {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+</style>
 
 ---
 
 # Simulation Setup
 
-- 5 candidates (-1 to 1 ideology scale)
-- 7 policy issues (incl. technology & performance)
-- 10,000 simulated voters
-- 4 voter distributions tested
+![Simulation Setup](./images/simulation-setup.png) ![Key Assumptions](./images/key-assumptions.png)
 
----
-
-# Key Assumptions
-
-1. Fixed candidate preferences
-2. Voter preferences based on ideology + randomness
-3. 50% prioritize political performance
-4. 5% strongly prioritize technology
-5. Social influence affects preferences
-
----
-
-# Simulation Process
-
-1. Generate preferences (candidates & voters)
-2. Calculate scores for 3 voting methods
-3. Compare and visualize results
+<style scoped>
+  img {
+    display: block;
+    width: 45%;
+    float: left;
+    margin-right: 3%;
+    text-align: center;
+  }
+</style>
 
 ---
 
