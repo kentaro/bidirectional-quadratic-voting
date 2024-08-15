@@ -17,7 +17,20 @@ style: |
   h2 {
     font-size: 42px;
   }
-
+  /* 三重引用を脚注の記号に転用 */
+  /* 下記はdefaultテーマ用。他のテーマで利用するときはbottomとleftを調節してください。 */
+  /* スライド全体で利用するため、無名のstyleタグを利用しています。 */
+  blockquote > blockquote > blockquote {
+    font-size: 40%;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-top: 0.1em solid #555;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
 ---
 
 # Bidirectional Quadratic Voting
@@ -136,34 +149,59 @@ section {
 
 ---
 
-# Simulation Results
+# Candidate Preferences
 
-![Simulation Results](https://example.com/simulation_results.png)
+- Candidates span political spectrum
+- Candidate 2: tech expert
 
-- Comparison of normal voting, QV, and bidirectional QV
-- Verification across various voter distribution patterns
+![Candidate Distribution](./images/candidates.png)
+
+<style scoped>
+  img {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+</style>
 
 ---
 
-# Key Findings
+# Voter Distribution
 
-1. Bidirectional QV shows more balanced results across different voter distributions
-2. QV and Bidirectional QV give more weight to minority opinions compared to normal voting
-3. The impact of voting method varies depending on the voter ideology distribution
+- Four voter distributions assumed: normal, bimodal, left-skewed, and right-skewed
+- Simulations conducted for each distribution
+
+![Voter Distribution](./images/voter-distribution.png)
+
+<style scoped>
+  img {
+    width: 100%;
+  }
+</style>
+
+---
+
+# Simulation Results (*1)
+
+- Balanced results vs. normal voting
+- Higher support for tech-expert candidate
+
+![Simulation Results](./images/simulation-results.png)
+
+>>> *1: Only results for normal distribution shown
+
+<style scoped>
+  img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+</style>
 
 ---
 
 # Conclusion
 
-- Bidirectional QV more accurately reflects complex preferences
-- Supports major candidates without compromising technology-focused opinions
-- Suitable voting system for societies with diverse policy preferences
-
----
-
-# Future Challenges
-
-- Implementation and verification in actual elections
-- Voter education and development of user-friendly interfaces
-- Consideration of legal and ethical aspects
-- Further refinement of the simulation model
+- QV/BQV is a promising mechanism for social implementation on Ethereum
+- GMO aims to collaborate with the Ethereum community to create positive social impact
+- Together, we can leverage blockchain technology to build a better world
