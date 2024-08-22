@@ -31,10 +31,11 @@ style: |
     bottom: 10px;
     left: 10px;
   }
+  
 ---
 
 # Bidirectional Quadratic Voting
-## A Proposal for Precise Candidate Matching
+## Leveraging Issue-Based Matching
 
 Kentaro Kuribayashi
 GMO Pepabo, Inc.
@@ -56,7 +57,6 @@ section {
 
 ---
 
-
 # About Me
 
 - Kentaro Kuribayashi
@@ -67,9 +67,17 @@ section {
 
 ---
 
-# Challenge: The Voting Dilemma
+# Disclaimer
 
-![background](./images/background.png)
+This presentation does not represent the views of my affiliated organization, nor does it reflect my personal political opinions.
+
+---
+
+# Challenge: The Voting Dilemma (1/2)
+
+Balancing experience with innovation in candidate selection. 
+
+![background](./images/challenge.png)
 
 <style scoped>
   img {
@@ -81,11 +89,18 @@ section {
 
 ---
 
+# Challenge: The Voting Dilemma (2/2)
+
+- Focusing on past achievements might hinder recognition of new ideas
+- Prioritizing the latter may inadvertently favor opposing candidates in reality
+
+---
+
 # Potential Solution:<br>Quadratic Voting (QV)
 
-- Express varying preference strengths
-- Quadratic credit allocation
-- Amplifies minority opinions
+- QV as a potential solution
+- Allows voters to express distributed preferences
+- Not limited to choosing a single candidate
 
 ![bg right:35% height:65%](./images/qv.png)
 
@@ -99,23 +114,16 @@ section {
   img {
     display: block;
     margin: auto;
-    width: 100%;
+    width: 95%;
   }
 </style>
 
 ---
 
-# Improving on QV: Policy-Based Matching
+# Taking It a Step Further
 
-![Improving on QV](./images/improving-on-qv.png)
-
-<style scoped>
-  img {
-    display: block;
-    margin: auto;
-    width: 80%;
-  }
-</style>
+- QV in elections still leaves voters uncertain about candidates' true preferences
+- Need for a voting method aligning voters and candidates on specific issues
 
 ---
 
