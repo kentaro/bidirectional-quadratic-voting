@@ -1,59 +1,215 @@
-# Bidirectional Quadratic Voting Experiment
+---
+marp: true
+theme: default
+paginate: true
+style: |
+  section {
+    font-size: 36pt;
+    background-image: url('images/pepabo.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  }
+  h1 {
+    font-size: 48pt;
+    margin-bottom: 36pt;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  /* 三重引用を脚注の記号に転用 */
+  /* 下記はdefaultテーマ用。他のテーマで利用するときはbottomとleftを調節してください。 */
+  /* スライド全体で利用するため、無名のstyleタグを利用しています。 */
+  blockquote > blockquote > blockquote {
+    font-size: 40%;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-top: 0.1em solid #555;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  
+---
 
-This experiment simulates and compares different voting methods, including normal voting, quadratic voting, and bidirectional quadratic voting, across various voter distributions.
+# Bidirectional Quadratic Voting
+## Leveraging Issue-Based Matching
 
-## Overview
+Kentaro Kuribayashi
+GMO Pepabo, Inc.
 
-The experiment explores how different voting methods perform under various voter ideology distributions. It simulates candidate preferences, voter preferences, and calculates matching scores for each voting method.
+ETHTokyo 2024
 
-## Key Components
+<style scoped>
+h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+h2 {
+  margin-top: 0;
+}
+section {
+  font-size: 24pt;
+}
+</style>
 
-1. **Candidates**: 5 candidates with varying ideological positions.
-2. **Issues**: 6 issues including Environmental Protection, Economic Growth, Education Reform, Social Security, Foreign Policy, and Technology.
-3. **Voters**: 10,000 simulated voters.
-4. **Voter Distributions**: Normal, Bimodal, Skewed Left, and Skewed Right.
+---
 
-## Voting Methods
+# About Me
 
-1. **Normal Voting**: Based on a specified distribution (Tokyo Governor Election 2024 Results).
-2. **Quadratic Voting**: Voters allocate credits quadratically to express preference intensity.
-3. **Bidirectional Quadratic Voting**: Both voters and candidates use quadratic voting to express preferences.
+- Kentaro Kuribayashi
+- CTO at GMO Pepabo, Inc.
+- [kentarokuribayashi.com](https://kentarokuribayashi.com)
 
-## Simulation Process
+![bg right:35% height:50%](https://pbs.twimg.com/profile_images/1737743542724997120/ygmW433p_400x400.jpg)
 
-1. Generate candidate preferences.
-2. Generate voter preferences for each distribution type.
-3. Calculate matching scores for each voting method.
-4. Visualize results using matplotlib.
+---
 
-## Results
+# Disclaimer
 
-The experiment produces:
-- Candidate preference distribution graph.
-- Voter ideology distribution graphs for each distribution type.
-- Comparison graphs of voting results for each distribution and voting method.
-- Numerical output of matching scores for each candidate under different voting methods and voter distributions.
+This presentation does not represent the views of my affiliated organization, nor does it reflect my personal political opinions.
 
-## Code Structure
+---
 
-The main components of the code are:
+# Challenge: The Voting Dilemma (1/2)
 
-```python:experiments.ipynb
-startLine: 25
-endLine: 83
-```
+Balancing experience with innovation in candidate selection. 
 
-This section includes functions for generating preferences, calculating voting scores, and implementing different voting methods.
+![background](./images/challenge.png)
 
-## Running the Experiment
+<style scoped>
+  img {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+</style>
 
-The experiment is executed in a Jupyter notebook environment. The main simulation and visualization code is located at:
+---
 
-```python:experiments.ipynb
-startLine: 200
-endLine: 310
-```
+# Challenge: The Voting Dilemma (2/2)
 
-## Conclusion
+- Focusing on past achievements might hinder recognition of new ideas
+- Prioritizing the latter may inadvertently favor opposing candidates in reality
 
-This experiment provides insights into how different voting methods perform under various voter ideology distributions, potentially informing discussions on electoral system design and reform.
+---
+
+# Potential Solution:<br>Quadratic Voting (QV)
+
+- QV as a potential solution
+- Allows voters to express distributed preferences
+- Not limited to choosing a single candidate
+
+![bg right:35% height:65%](./images/qv.png)
+
+---
+
+# Applying QV to Elections
+
+![Appling QV to Elections](./images/applying-qv-to-elections.png)
+
+<style scoped>
+  img {
+    display: block;
+    margin: auto;
+    width: 95%;
+  }
+</style>
+
+---
+
+# Taking It a Step Further
+
+- QV in elections still leaves voters uncertain about candidates' true preferences
+- Need for a voting method aligning voters and candidates on specific issues
+
+---
+
+# Proposed Solution:<br>Bidirectional Quadratic Voting (BQV)
+
+![Appling BQV to Elections](./images/applying-bqv-to-elections.png)
+
+<style scoped>
+  img {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+</style>
+
+---
+
+# Simulation Setup
+
+![Simulation Setup](./images/simulation-setup.png) ![Key Assumptions](./images/key-assumptions.png)
+
+<style scoped>
+  img {
+    display: block;
+    width: 45%;
+    float: left;
+    margin-right: 3%;
+    text-align: center;
+  }
+</style>
+
+---
+
+# Candidate Preferences
+
+- Candidates span political spectrum
+- Candidate 2: tech expert
+
+![Candidate Distribution](./images/candidates.png)
+
+<style scoped>
+  img {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+</style>
+
+---
+
+# Voter Distribution
+
+- Four voter distributions assumed: normal, bimodal, left-skewed, and right-skewed
+- Simulations conducted for each distribution
+
+![Voter Distribution](./images/voter-distribution.png)
+
+<style scoped>
+  img {
+    width: 100%;
+  }
+</style>
+
+---
+
+# Simulation Results (*1)
+
+- Balanced results vs. normal voting
+- Higher support for tech-expert candidate
+
+![Simulation Results](./images/simulation-results.png)
+
+>>> *1: Only results for normal distribution shown
+
+<style scoped>
+  img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+</style>
+
+---
+
+# Conclusion
+
+- QV/BQV is a promising mechanism for social implementation on Ethereum
+- GMO aims to collaborate with the Ethereum community to create positive social impact
+- Together, we can leverage blockchain technology to build a better world
