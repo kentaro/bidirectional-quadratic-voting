@@ -17,11 +17,8 @@ style: |
   h2 {
     font-size: 42px;
   }
-  /* 三重引用を脚注の記号に転用 */
-  /* 下記はdefaultテーマ用。他のテーマで利用するときはbottomとleftを調節してください。 */
-  /* スライド全体で利用するため、無名のstyleタグを利用しています。 */
   blockquote > blockquote > blockquote {
-    font-size: 40%;
+    font-size: 50%;
     font-weight: 400;
     padding: 0;
     margin: 0;
@@ -96,7 +93,7 @@ Balancing experience with innovation in candidate selection.
 
 ---
 
-# Potential Solution:<br>Quadratic Voting (QV)
+# Quadratic Voting (QV)
 
 - QV as a potential solution
 - Allows voters to express distributed preferences
@@ -127,7 +124,7 @@ Balancing experience with innovation in candidate selection.
 
 ---
 
-# Proposed Solution:<br>Bidirectional Quadratic Voting (BQV)
+# Bidirectional Quadratic Voting (BQV)
 
 ![Appling BQV to Elections](./images/applying-bqv-to-elections.png)
 
@@ -135,7 +132,7 @@ Balancing experience with innovation in candidate selection.
   img {
     display: block;
     margin: auto;
-    width: 80%;
+    width: 100%;
   }
 </style>
 
@@ -160,15 +157,14 @@ Balancing experience with innovation in candidate selection.
 # Candidate Preferences
 
 - Candidates span political spectrum
+- Candidates 1 and 4: relatively high political experience
 - Candidate 2: tech expert
 
-![Candidate Distribution](./images/candidates.png)
+![bg right:50% height:80%](./images/candidates.png)
 
 <style scoped>
-  img {
-    display: block;
-    margin: auto;
-    width: 100%;
+  section {
+    font-size: 32pt;
   }
 </style>
 
@@ -189,20 +185,31 @@ Balancing experience with innovation in candidate selection.
 
 ---
 
-# Simulation Results (*1)
-
-- Balanced results vs. normal voting
-- Higher support for tech-expert candidate
+# Simulation Results (1/2)
 
 ![Simulation Results](./images/simulation-results.png)
-
->>> *1: Only results for normal distribution shown
 
 <style scoped>
   img {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 78%;
+  }
+</style>
+
+---
+
+# Simulation Results (2/2)
+
+- QV/BQV reflects more balanced preferences compared to regular voting (*1)
+- More precise modeling is needed for more accurate simulations
+- For complete simulation details, please refer to my GitHub repository (*2)
+
+>>> *1: Only results for normal distribution shown <br> *2: https://github.com/kentaro/bidirectional-quadratic-voting
+
+<style scoped>
+  section {
+    font-size: 32pt;
   }
 </style>
 
@@ -212,4 +219,4 @@ Balancing experience with innovation in candidate selection.
 
 - QV/BQV is a promising mechanism for social implementation on Ethereum
 - GMO aims to collaborate with the Ethereum community to create positive social impact
-- Together, we can leverage blockchain technology to build a better world
+- Together, we can leverage blockchain technology to build a better world!
