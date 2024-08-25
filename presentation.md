@@ -138,6 +138,14 @@ Balancing experience with innovation in candidate selection.
 
 ----
 
+# Key Features of BQV
+
+- BQV resembles a matching app mechanism
+- Unlike 1:N matching in dating apps, BQV facilitates N:M matching
+- As a voting system, it needs to be comprehensible (though still complex)
+
+----
+
 # Simulation Setup
 
 ![Simulation Setup](./images/simulation-setup.png) ![Key Assumptions](./images/key-assumptions.png)
