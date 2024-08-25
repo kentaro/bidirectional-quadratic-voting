@@ -52,7 +52,7 @@ section {
 }
 </style>
 
----
+----
 
 # About Me
 
@@ -62,13 +62,13 @@ section {
 
 ![bg right:35% height:50%](https://pbs.twimg.com/profile_images/1737743542724997120/ygmW433p_400x400.jpg)
 
----
+----
 
 # Disclaimer
 
 This presentation does not represent the views of my affiliated organization, nor does it reflect my personal political opinions.
 
----
+----
 
 # Challenge: The Voting Dilemma (1/2)
 
@@ -84,14 +84,14 @@ Balancing experience with innovation in candidate selection.
   }
 </style>
 
----
+----
 
 # Challenge: The Voting Dilemma (2/2)
 
 - Focusing on past achievements might hinder recognition of new ideas
 - Prioritizing the latter may inadvertently favor opposing candidates in reality
 
----
+----
 
 # Quadratic Voting (QV)
 
@@ -101,7 +101,7 @@ Balancing experience with innovation in candidate selection.
 
 ![bg right:35% height:65%](./images/qv.png)
 
----
+----
 
 # Applying QV to Elections
 
@@ -115,14 +115,14 @@ Balancing experience with innovation in candidate selection.
   }
 </style>
 
----
+----
 
 # Taking It a Step Further
 
 - QV in elections still leaves voters uncertain about candidates' true preferences
 - Need for a voting method aligning voters and candidates on specific issues
 
----
+----
 
 # Bidirectional Quadratic Voting (BQV)
 
@@ -136,7 +136,7 @@ Balancing experience with innovation in candidate selection.
   }
 </style>
 
----
+----
 
 # Simulation Setup
 
@@ -152,7 +152,7 @@ Balancing experience with innovation in candidate selection.
   }
 </style>
 
----
+----
 
 # Candidate Preferences
 
@@ -168,7 +168,7 @@ Balancing experience with innovation in candidate selection.
   }
 </style>
 
----
+----
 
 # Voter Distribution
 
@@ -183,7 +183,7 @@ Balancing experience with innovation in candidate selection.
   }
 </style>
 
----
+----
 
 # Simulation Results (1/2)
 
@@ -197,7 +197,7 @@ Balancing experience with innovation in candidate selection.
   }
 </style>
 
----
+----
 
 # Simulation Results (2/2)
 
@@ -213,7 +213,7 @@ Balancing experience with innovation in candidate selection.
   }
 </style>
 
----
+----
 
 # Conclusion
 
