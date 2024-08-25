@@ -4,7 +4,7 @@
 
 こんにちは、皆さん。私はGMOペパボの栗林健太郎です。ETHTokyoがこのように盛大に開催されたことについて、スポンサー企業としてお慶び申し上げます。ところで、昨日までハッカソンが行われていたので、私も少しハックしてきました。スマートコントラクトを書くところまではいけませんでしたが、今日はその成果について簡単にお話しします。
 
-Hello everyone. I'm Kentaro Kuribayashi from GMO Pepabo. As a sponsor, we're delighted to see ETHTokyo held on such a grand scale. By the way, there was a hackathon until yesterday, so I did some hacking too. I didn't get as far as writing smart contracts, but today I'll briefly talk about what I came up with.
+Hello everyone. I'm Kentaro Kuribayashi from GMO Pepabo. As a sponsor, we're delighted to see ETHTokyo held on such a grand scale. By the way, there was a hackathon until yesterday, so I did some hacking too. While I didn't reach the point of creating smart contracts, today I'll share a brief overview of the concept I've developed.
 
 ## スライド2: 自己紹介 / About Me
 
