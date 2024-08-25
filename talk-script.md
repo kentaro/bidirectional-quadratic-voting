@@ -10,7 +10,7 @@ Hello everyone. I'm Kentaro Kuribayashi from GMO Pepabo. As a sponsor, we're del
 
 私はGMOペパボのCTOを務めています。日本の友人は私のことを「あんちぽ」と呼んでいます。ぜひ皆さんも「あんちぽ」と気軽にお呼びください。
 
-I'm the CTO of GMO Pepabo. Please feel free to call me "Anchipo".
+I'm GMO Pepabo's CTO. Friends call me "Anchipo". Please call me that too.
 
 ## スライド3: 免責事項 / Disclaimer
 
